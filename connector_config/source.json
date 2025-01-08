@@ -1,0 +1,15 @@
+{
+  "name": "sqlserver-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+    "database.hostname": "<your_rds_endpoint>",
+    "database.port": "1433",
+    "database.user": "<db_user>",
+    "database.password": "<db_password>",
+    "database.dbname": "<your_database>",
+    "database.server.name": "sqlserver",
+    "table.include.list": "dbo.your_table_name",
+    "database.history.kafka.bootstrap.servers": "<msk_bootstrap_servers>",
+    "database.history.kafka.topic": "schema-changes.sqlserver"
+  }
+}
