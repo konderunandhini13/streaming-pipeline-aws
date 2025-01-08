@@ -9,7 +9,8 @@ CREATE TABLE Users (
 );
 
 -- Step 2: Enable CDC on this table
-EXEC sys.sp_cdc_enable_db;
+exec msdb.dbo.rds_cdc_enable_db 'database_name';
+
 
 EXEC sys.sp_cdc_enable_table  
     @source_schema = 'dbo',  
