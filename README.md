@@ -23,14 +23,17 @@
           b. Kafka-S3-Sink Connector: https://www.confluent.io/hub/confluentinc/kafka-connect-s3
 
 # Step 6: Create the source connector
-          follow the steps explained in the video to create the spurce connector 
+          follow the steps explained in the video to create the source connector 
 
-# Step 7: Verify the data in topic 
-          a. verify if the connector is loading the data to Kafka topic
-          b. Use commands listed here : 
+# Step 7: Create and EC2 instance (This step is optional , we are doing this to just to view the data in Kafka topic)
+          a. Create EC2 instance
+          b. Create EC2 service role with IAM permissions given here : IAM/ecRole.json
           
-Kafka-S3-Sink Connector:
-https://www.confluent.io/hub/confluentinc/kafka-connect-s3
+# Step 7: Verify the data in topic (This step is optional , we are doing this to just to view the data in Kafka topic)
+          a. Install Kafka by using the commands given here : kafka/kafka_commands.txt
+          b. Use the console consumer command (#7 in above file) to view the data in topic
+          
+# Step 8: Create S3 Sink Connector
+          follow the steps explained in the video to create the Sink connector 
 
-
-
+# Step 9: Verify the data in target S3 Bucket
