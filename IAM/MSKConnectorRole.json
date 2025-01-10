@@ -69,7 +69,7 @@
             "Action": "sts:AssumeRole",
             "Condition": {
                 "StringEquals": {
-                    "aws:SourceAccount": "970547348720"
+                    "aws:SourceAccount": "<acoount-id>"
                 }
             }
         }
