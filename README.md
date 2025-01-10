@@ -29,11 +29,11 @@
           a. Create EC2 instance
           b. Create EC2 service role with IAM permissions given here : IAM/ecRole.json
           
-# Step 7: Verify the data in topic (This step is optional , we are doing this to just to view the data in Kafka topic)
+# Step 8: Verify the data in topic (This step is optional , we are doing this to just to view the data in Kafka topic)
           a. Install Kafka by using the commands given here : kafka/kafka_commands.txt
           b. Use the console consumer command (#7 in above file) to view the data in topic
           
-# Step 8: Create S3 Sink Connector
+# Step 9: Create S3 Sink Connector
           follow the steps explained in the video to create the Sink connector 
 
-# Step 9: Verify the data in target S3 Bucket
+# Step 10: Verify the data in target S3 Bucket
