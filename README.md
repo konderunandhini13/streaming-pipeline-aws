@@ -4,9 +4,11 @@ Step 2 : Create Database, table , enable CDC on table and insert the data into t
 
 Step 3: Create MSK Cluster
 
-Step 4: Create connector plugins for SQL Server Source and S3 Sink
+Step 4: Create an IAM Role for MSK with the policy given in Repo
 
-Step 5: Create the source connector
+Step 5: Create connector plugins for SQL Server Source and S3 Sink
+
+Step 6: Create the source connector
 
 Debezium Connector for SQL Server : 
 https://www.confluent.io/hub/debezium/debezium-connector-sqlserver
