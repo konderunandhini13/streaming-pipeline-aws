@@ -27,6 +27,7 @@
 
 # Step 7: Verify the data in topic 
           a. verify if the connector is loading the data to Kafka topic
+          b. Use commands listed here : 
           
 Kafka-S3-Sink Connector:
 https://www.confluent.io/hub/confluentinc/kafka-connect-s3
