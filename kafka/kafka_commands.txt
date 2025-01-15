@@ -19,3 +19,7 @@ sasl.client.callback.handler.class=software.amazon.msk.auth.iam.IAMClientCallbac
 
 7. 
 bin/kafka-console-consumer.sh --bootstrap-server <bootstrapServerString> --consumer.config /home/ec2-user/kafka_2.13-3.6.0/bin/client.properties --topic <your-topic-name> --from-beginning
+
+
+****Command to create Topic*************
+bin/kafka-topics.sh --create --bootstrap-server <bootstrapServerString> --command-config /home/ec2-user/kafka_2.13-3.6.0/bin/client.properties --replication-factor 3 --partitions 1 --topic MSKTutorialTopic
