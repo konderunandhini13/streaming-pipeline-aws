@@ -20,11 +20,11 @@ database.history.consumer.sasl.mechanism=AWS_MSK_IAM
 database.encrypt=false
 database.port=1433
 database.names=myapp
-database.hostname=<rds-host-name?
-database.user=<username>
-database.password=<password>
-table.include.list=<tables-to-include>
-schema.include.list=<schemas-to-include>
+database.hostname=kafka-source-db.cteq4ao682o5.eu-north-1.rds.amazonaws.com
+database.user=admin
+database.password=13navya15
+table.include.list=dbo.Users
+schema.include.list=dbo
 
 
 value.converter=org.apache.kafka.connect.json.JsonConverter
@@ -42,7 +42,7 @@ topic.creation.default.cleanup.policy=delete
 
 schema.history.internal.kafka.topic=schemahistory.DEMO_APP
 
-schema.history.internal.kafka.bootstrap.servers=<bootstrap_server_url>
+schema.history.internal.kafka.bootstrap.servers=b-3.kafkapipelinecluster.xf0goe.c4.kafka.eu-north-1.amazonaws.com:9098
 schema.history.internal.consumer.sasl.client.callback.handler.class=software.amazon.msk.auth.iam.IAMClientCallbackHandler
 schema.history.internal.consumer.sasl.jaas.config=software.amazon.msk.auth.iam.IAMLoginModule required;
 schema.history.internal.consumer.security.protocol=SASL_SSL
